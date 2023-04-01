@@ -1,0 +1,34 @@
+header,
+main,
+footer {
+    padding-left: var(--sidenav-width);
+}
+
+.sidenav {
+    width: var(--sidenav-width);
+    background-color: #191918;
+    transform: translateX(0px);
+}
+
+.sidenav > .container {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.sidenav > .container > .author-name {
+    text-align: center;
+    color: white;
+}
+
+nav.navbar {
+    padding: 0 20px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+nav.navbar .brand-logo {
+    position: relative;
+    float: left;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+}
