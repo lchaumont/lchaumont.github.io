@@ -1,5 +1,13 @@
-html {
+:root {
     --sidenav-width: 260px;
+
+    --color-primary-temp: 25, 25, 24;
+    --color-primary: rgba(var(--color-primary-temp), 1);
+    --color-secondary-temp: 215, 122, 0;
+    --color-secondary: rgba(var(--color-secondary-temp), 1);
+
+    --color-primary-text: #fff;
+    --color-secondary-text: #ffffff;
 }
 
 html,
@@ -7,4 +15,36 @@ body,
 #root,
 #root > main {
     height: 100%;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+    font-weight: 500;
+}
+
+.btn,
+.btn-large,
+.btn-small .primary {
+    text-decoration: none;
+    color: var(--color-primary-text);
+    background-color: var(--color-primary);
+    text-align: center;
+    letter-spacing: 0.5px;
+    -webkit-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
+}
+
+.btn,
+.btn-large,
+.btn-small .secondary {
+    text-decoration: none;
+    color: var(--color-secondary-text);
+    background-color: var(--color-secondary);
+    text-align: center;
+    letter-spacing: 0.5px;
+    -webkit-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
 }

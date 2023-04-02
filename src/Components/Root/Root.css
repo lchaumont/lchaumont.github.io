@@ -6,18 +6,48 @@ footer {
 
 .sidenav {
     width: var(--sidenav-width);
-    background-color: #191918;
+    background-color: var(--color-primary);
     transform: translateX(0px);
+
+    box-sizing: border-box;
+    border-right: 5px solid var(--color-secondary);
 }
 
-.sidenav > .container {
+.sidenav > li > a {
+    color: var(--color-primary-text);
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+.sidenav > li > a:hover {
+    background-color: rgb(var(--color-secondary-temp), 0.5);
+}
+
+.sidenav > li > .container {
     margin-top: 20px;
     width: 80%;
 }
 
-.sidenav > .container > .author-name {
+.sidenav > li > .container > .author-name {
     text-align: center;
-    color: white;
+    color: var(--color-primary-text);
+    font-size: large;
+    line-height: 25px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+}
+
+.social-icons a svg {
+    color: var(--color-secondary);
 }
 
 nav.navbar {

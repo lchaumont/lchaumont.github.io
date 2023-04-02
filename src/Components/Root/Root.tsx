@@ -1,6 +1,7 @@
 import React from "react";
 import {Outlet, Link, useLocation} from "react-router-dom";
 import "./Root.css";
+import {SiGithub, SiLinkedin} from "@icons-pack/react-simple-icons";
 
 const Root = () => {
     const currentLocation = useLocation();
@@ -27,24 +28,34 @@ const Root = () => {
                     </nav>
                 </div>
 
-                <ul id="sidenav-left" className="sidenav sidenav-fixed">
-                    <div className="container">
-                        <img
-                            className="circle responsive-img"
-                            src="https://github.com/lchaumont.png"
-                            alt="github_profile_img"
-                        />
-                        <div className="author-name">Louis Chaumont</div>
-                    </div>
+                <ul className="sidenav sidenav-fixed">
+                    <li>
+                        <div className="container">
+                            <img
+                                className="circle responsive-img"
+                                src="https://github.com/lchaumont.png"
+                                alt="github_profile_img"
+                            />
+                            <div className="author-name">Louis Chaumont</div>
+                        </div>
+                    </li>
 
-                    <div id="social-icons">
-                        <a href="https://www.linkedin.com/in/softvar">
-                            <span className="material-icons md-dark">face</span>
-                        </a>
-                        <a href="http://github.com/softvar">
-                            <span className="material-icons md-dark">face</span>
-                        </a>
-                    </div>
+                    <li>
+                        <div className="social-icons">
+                            <a href="https://www.linkedin.com/in/louis-chaumont-758126226/">
+                                <SiLinkedin size={40} />
+                            </a>
+                            <a href="https://github.com/lchaumont">
+                                <SiGithub size={40} />
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <Link className="waves-effect" to="/image_convulution">
+                            Convultion d'images
+                        </Link>
+                    </li>
                 </ul>
             </header>
 
