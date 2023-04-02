@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/lchaumont.github.io/static/css/main.9c251ef8.css",
+    "main.js": "/lchaumont.github.io/static/js/main.8e6d1782.js",
+    "static/media/error_gif.gif": "/lchaumont.github.io/static/media/error_gif.3605c4a8cee35108e4c2.gif",
+    "index.html": "/lchaumont.github.io/index.html",
+    "main.9c251ef8.css.map": "/lchaumont.github.io/static/css/main.9c251ef8.css.map",
+    "main.8e6d1782.js.map": "/lchaumont.github.io/static/js/main.8e6d1782.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c251ef8.css",
+    "static/js/main.8e6d1782.js"
+  ]
+}
