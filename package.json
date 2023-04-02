@@ -1,7 +1,7 @@
 {
     "name": "lchaumont.github.io",
     "version": "0.1.0",
-    "homepage": "https://lchaumont.github.io/lchaumont.github.io",
+    "homepage": "https://lchaumont.github.io",
     "private": true,
     "dependencies": {
         "@icons-pack/react-simple-icons": "^7.1.1",
