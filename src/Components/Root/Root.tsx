@@ -10,6 +10,8 @@ const Root = () => {
         switch (currentLocation.pathname) {
             case "/":
                 return "Accueil";
+            case "/image_convulution":
+                return "Convolution d'images";
             default:
                 return "";
         }
@@ -53,7 +55,7 @@ const Root = () => {
 
                     <li>
                         <Link className="waves-effect" to="/image_convulution">
-                            Convultion d'images
+                            Convolution d'images
                         </Link>
                     </li>
                 </ul>

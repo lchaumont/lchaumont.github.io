@@ -17,34 +17,61 @@ body,
     height: 100%;
 }
 
+.fluid {
+    width: 100%;
+}
+
+.container {
+    max-width: none;
+}
+
+.container.container-margin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 90%;
+    }
+}
+
 .btn,
 .btn-large,
 .btn-small {
     font-weight: 500;
 }
 
-.btn,
-.btn-large,
-.btn-small .primary {
-    text-decoration: none;
+.btn.primary,
+.btn-large.primary,
+.btn-small.primary {
     color: var(--color-primary-text);
     background-color: var(--color-primary);
-    text-align: center;
-    letter-spacing: 0.5px;
-    -webkit-transition: background-color 0.2s ease-out;
-    transition: background-color 0.2s ease-out;
-    cursor: pointer;
 }
 
-.btn,
-.btn-large,
-.btn-small .secondary {
-    text-decoration: none;
+.btn.primary:hover,
+.btn-large.primary:hover,
+.btn-small.primary:hover {
     color: var(--color-secondary-text);
     background-color: var(--color-secondary);
-    text-align: center;
-    letter-spacing: 0.5px;
-    -webkit-transition: background-color 0.2s ease-out;
-    transition: background-color 0.2s ease-out;
-    cursor: pointer;
+}
+
+.btn.secondary,
+.btn-large.secondary,
+.btn-small.secondary {
+    color: var(--color-secondary-text);
+    background-color: var(--color-secondary);
+}
+
+.btn.secondary:hover,
+.btn-large.secondary:hover,
+.btn-small.secondary:hover {
+    color: var(--color-primary-text);
+    background-color: var(--color-primary);
 }

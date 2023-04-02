@@ -7,7 +7,7 @@ const ErrorPage = () => {
         <div className="main_container">
             <h1>404 - Not Found</h1>
             <div className="error_gif"></div>
-            <Link className="waves-effect waves-light btn-large" to="/">
+            <Link className="waves-effect waves-light btn-large secondary" to="/">
                 <i className="material-icons left">arrow_back</i>
                 Retour à l'acceuil
             </Link>

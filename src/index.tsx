@@ -5,6 +5,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Home from "./Components/Home/Home";
 import Root from "./Components/Root/Root";
 import "./index.css";
+import ImageConvolution from "./Components/ImageConvolution/ImageConvolution";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
             {
                 path: "/accueil",
                 element: <Home />,
+            },
+            {
+                path: "/image_convulution",
+                element: <ImageConvolution />,
             },
         ],
     },
